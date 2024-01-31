@@ -23,6 +23,19 @@ public class Categoria {
 	@NotBlank(message = "O atributo é obrigatorio!")
 	@Size(min=10, max=1000)
 	private String descricao;
+	
+	
+
+	public Categoria(Long id, String nome, String descricao) {
+		this.id = id;
+		this.nome = nome;
+		this.descricao = descricao;
+	}
+	
+	public Categoria() {
+	}
+
+
 
 	public Long getId() {
 		return id;
